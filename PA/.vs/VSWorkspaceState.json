@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\PA",
-    "\\PA\\PA",
-    "\\PA\\PA\\Model"
+    "\\PA\\DAO"
   ],
-  "SelectedNode": "\\PA\\PA\\PA.csproj.user",
+  "SelectedNode": "\\PA\\DAO\\ClienteDAO.cs",
   "PreviewInSolutionExplorer": false
 }

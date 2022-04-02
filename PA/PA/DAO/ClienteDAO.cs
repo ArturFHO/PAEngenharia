@@ -16,13 +16,12 @@ namespace PA.DAO
             comando.CommandType = System.Data.CommandType.Text;
             comando.CommandText = 'INSERT INTO Cliente (nome_cliente, cpf_cliente, tel_cliente, cel_cliente, email_cliente, end_cliente) VALUES (@nome, @cpf, @telefone, @celular, @email, @endereço)';
 
-            comando.Parameters.AddWithValue("@nome", cliente);
-            comando.Parameters.AddWithValue("@nome", cliente);
-            comando.Parameters.AddWithValue("@nome", cliente);
-            comando.Parameters.AddWithValue("@nome", cliente);
-            comando.Parameters.AddWithValue("@nome", cliente);
-            comando.Parameters.AddWithValue("@nome", cliente);
-            comando.Parameters.AddWithValue("@nome", cliente);
+            comando.Parameters.AddWithValue("@nome", cliente.nome);
+            comando.Parameters.AddWithValue("@cpf", cliente.cpf);
+            comando.Parameters.AddWithValue("@telefone", cliente.telefone);
+            comando.Parameters.AddWithValue("@celular", cliente.celular);
+            comando.Parameters.AddWithValue("@email", cliente.email);
+            comando.Parameters.AddWithValue("@endereco", cliente.endereco);
 
             ConexaoBanco.CRUD(comando);
         }
@@ -31,15 +30,14 @@ namespace PA.DAO
         {
             NpgsqlCommand comando = new NpgsqlCommand();
             comando.CommandType = System.Data.CommandType.Text;
-            comando.CommandText = 'INSERT INTO Cliente (nome_cliente, cpf_cliente, tel_cliente, cel_cliente, email_cliente, end_cliente) VALUES (@nome, @cpf, @telefone, @celular, @email, @endereço)';
+            comando.CommandText = 'INSERT INTO Cliente (nome_cliente, cpf_cliente, tel_cliente, cel_cliente, email_cliente, end_cliente) VALUES (@nome, @cpf, @telefone, @celular, @email, @endereco)';
 
-            comando.Parameters.AddWithValue("@nome", cliente);
-            comando.Parameters.AddWithValue("@nome", cliente);
-            comando.Parameters.AddWithValue("@nome", cliente);
-            comando.Parameters.AddWithValue("@nome", cliente);
-            comando.Parameters.AddWithValue("@nome", cliente);
-            comando.Parameters.AddWithValue("@nome", cliente);
-            comando.Parameters.AddWithValue("@nome", cliente);
+            comando.Parameters.AddWithValue("@nome", cliente.nome);
+            comando.Parameters.AddWithValue("@cpf", cliente.cpf);
+            comando.Parameters.AddWithValue("@telefone", cliente.telefone);
+            comando.Parameters.AddWithValue("@celular", cliente.celular);
+            comando.Parameters.AddWithValue("@email", cliente.email);
+            comando.Parameters.AddWithValue("@endereco", cliente.endereco);
 
             ConexaoBanco.CRUD(comando);
 

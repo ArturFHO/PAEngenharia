@@ -8,12 +8,12 @@ namespace PA.Model
 {
     public abstract class Pessoa
     {
-        private String nome { get; set;  }
-        private String cpf { get; set; }
-        private String telefone { get; set; }
-        private String celular { get; set; }
-        private String email { get; set; }
-        private String endereco { get; set; }
+        protected String nome { get; set;  }
+        protected String cpf { get; set; }
+        protected String telefone { get; set; }
+        protected String celular { get; set; }
+        protected String email { get; set; }
+        protected String endereco { get; set; }
 
     }
 }
