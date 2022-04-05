@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "TuhpuDbHFGnMYQigavh79CC0dgu71wgQisVVCH7j2pSkOHEDlurVXrP8/THN3UEoy+oLuPFECpH9cyES+v6/lg==",
+  "dgSpecHash": "IPzMF+vq4zfkklTFofpun4YC5UYnaEJN3/AoaU93aoRDfBasjKLOqNWiahIdGg1aX/pZ1PV/IySRjbpbxzpgZQ==",
   "success": true,
-  "projectFilePath": "D:\\Faculdade\\Repos\\PA\\PA\\PA.csproj",
+  "projectFilePath": "C:\\Users\\Lucas Carmo\\source\\repos\\PAEngenharia\\PA\\PA\\PA.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Artur\\.nuget\\packages\\npgsql\\6.0.3\\npgsql.6.0.3.nupkg.sha512",
-    "C:\\Users\\Artur\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "C:\\Users\\Lucas Carmo\\.nuget\\packages\\npgsql\\6.0.3\\npgsql.6.0.3.nupkg.sha512",
+    "C:\\Users\\Lucas Carmo\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

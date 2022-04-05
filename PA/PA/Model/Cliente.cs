@@ -21,13 +21,14 @@ namespace PA.Model
         public Cliente(String nome, String cpf, String tel, String cel, String email, String end)
         {
             this.nome_cliente = nome;
-            this.cpf_cliente = nome;
-            this.tel_cliente = nome;
-            this.cel_cliente = nome;
-            this.email_cliente = nome;
+            this.cpf_cliente = cpf;
+            this.tel_cliente = tel;
+            this.cel_cliente = cel;
+            this.email_cliente = email;
             this.end_cliente = end;
             Usuario usuario = new Usuario();
             this.usuario = usuario;
+
         }
     }
 }
