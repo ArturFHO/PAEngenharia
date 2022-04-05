@@ -24,7 +24,7 @@ namespace PA.Model
             this.raca_pet = raca;
             Usuario usuario = new Usuario();
             this.usuario = usuario;
-            Cliente cliente = new cliente();
+            Cliente cliente = new Cliente();
             this.cliente = cliente;
         }
 

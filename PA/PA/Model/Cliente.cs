@@ -18,6 +18,8 @@ namespace PA.Model
         public String end_cliente { get; set; }
         public Usuario usuario;
 
+        public Cliente () {}
+
         public Cliente(String nome, String cpf, String tel, String cel, String email, String end)
         {
             this.nome_cliente = nome;
