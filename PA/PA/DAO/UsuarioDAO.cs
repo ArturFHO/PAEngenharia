@@ -9,11 +9,11 @@ using Npgsql;
 
 namespace PA.DAO
 {
-    public class ClienteDAO
+    public class UsuarioDAO
     {
-        public void Insert(Cliente cliente)
+        public void Insert(Usuario usuario)
         {
-            NpgsqlCommand comando = new NpgsqlCommand();
+            /*NpgsqlCommand comando = new NpgsqlCommand();
             comando.CommandType = System.Data.CommandType.Text;
             comando.CommandText = "INSERT INTO Cliente (nome_cliente, cpf_cliente, tel_cliente, cel_cliente, email_cliente, end_cliente) VALUES (@nome, @cpf, @telefone, @celular, @email, @endereco)";
 
@@ -24,7 +24,7 @@ namespace PA.DAO
             comando.Parameters.AddWithValue("@email", cliente.email_cliente);
             comando.Parameters.AddWithValue("@endereco", cliente.end_cliente);
 
-            ConexaoBanco.CRUD(comando);
+            ConexaoBanco.CRUD(comando);*/
         }
 
         public void Update(Cliente cliente)
@@ -67,8 +67,36 @@ namespace PA.DAO
             comando.CommandType = System.Data.CommandType.Text;
             comando.CommandText = "SELECT * FROM Cliente WHERE id_cliente=@id";
             comando.Parameters.AddWithValue("@id");
-            
+
             ConexaoBanco.CRUD(comando);
+        }
+
+        public Usuario ValidarUsuario(Usuario usuario, String user, String senha)
+        {
+            NpgsqlCommand comando = new NpgsqlCommand();
+            comando.CommandType = System.Data.CommandType.Text;
+            comando.CommandText = "SELECT * FROM Usuario WHERE nome_usuario=@user AND senha_usuario=@senha";
+            comando.Parameters.AddWithValue("@user", user);
+            comando.Parameters.AddWithValue("@senha", senha);
+
+            NpgsqlDataReader dr = ConexaoBanco.Selecionar(comando);
+            
+            if(dr.HasRows)
+            {
+                dr.Read();
+                usuario.id_usuario = (int)dr["id_usuario"];
+                usuario.nome_usuario = (string)dr["nome_usuario"];
+                usuario.senha_usuario = (string)dr["senha_usuario"];
+                usuario.email_usuario = (string)dr["email_usuario"];
+                usuario.tel_usuario = (string)dr["tel_usuario"];
+            
+            }
+            else
+            {
+                usuario = null;
+            }
+            return usuario;
+
         }
     }
 }

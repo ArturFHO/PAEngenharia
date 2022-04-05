@@ -32,7 +32,7 @@ namespace PA.DAO
 
         public static NpgsqlDataReader Selecionar(NpgsqlCommand comando)
         {
-            NpgsqlCommand con = Conectar();
+            NpgsqlConnection con = Conectar();
             comando.Connection = con;
             NpgsqlDataReader dr = comando.ExecuteReader(System.Data.CommandBehavior.CloseConnection);
             return dr;
