@@ -15,7 +15,11 @@ namespace PA.Model
         public string raca_pet { get; set; }
         public Usuario usuario;
         public Cliente cliente;
+        
+        public Pet()
+        {
 
+        }
         public Pet(String nome, String sexo, String tipo, String raca)
         {
             this.nome_pet = nome;

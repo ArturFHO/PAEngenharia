@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PA.Model;
+using PA.DAO;
 
 namespace PA.View
 {
@@ -28,10 +29,10 @@ namespace PA.View
             var end = txb_end_cliente.Text;
 
             Cliente cliente = new Cliente(nome, cpf, tel, cel, email, end);
+            cliente.usuario = Global.usuario;
 
-            cliente.usuario = usuario;
-            
-
+            ClienteDAO clienteDAO = new ClienteDAO();
+            clienteDAO.Insert(cliente);
         }
     }
 }

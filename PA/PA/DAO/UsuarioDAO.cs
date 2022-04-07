@@ -71,7 +71,7 @@ namespace PA.DAO
             ConexaoBanco.CRUD(comando);
         }
 
-        public Usuario ValidarUsuario(Usuario usuario, String user, String senha)
+        public Usuario ValidarUsuario(String user, String senha)
         {
             NpgsqlCommand comando = new NpgsqlCommand();
             comando.CommandType = System.Data.CommandType.Text;
@@ -81,6 +81,8 @@ namespace PA.DAO
 
             NpgsqlDataReader dr = ConexaoBanco.Selecionar(comando);
             
+            Usuario usuario = new Usuario();
+
             if(dr.HasRows)
             {
                 dr.Read();
@@ -89,14 +91,12 @@ namespace PA.DAO
                 usuario.senha_usuario = (string)dr["senha_usuario"];
                 usuario.email_usuario = (string)dr["email_usuario"];
                 usuario.tel_usuario = (string)dr["tel_usuario"];
-            
             }
             else
             {
                 usuario = null;
             }
             return usuario;
-
         }
     }
 }

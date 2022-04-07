@@ -31,19 +31,17 @@ namespace PA.View
 
             UsuarioDAO usuarioDAO = new UsuarioDAO();
 
-            Usuario usuario = new Usuario();
+            Global.usuario = usuarioDAO.ValidarUsuario(user, senha);
 
-            if (usuarioDAO.ValidarUsuario(usuario, user, senha) != null)
+            if (Global.usuario != null)
             {
-                Global.id_usuario = usuario.id_usuario;
-                Menu menu = new Menu();
-                menu.Show();
+                CadastrarCliente cadastrar = new CadastrarCliente();
+                cadastrar.Show();
             }
             else
             {
                 MessageBox.Show("Usuário não existe!");
             }
-
         }
 
         private void btn_login_cancelar_Click(object sender, EventArgs e)

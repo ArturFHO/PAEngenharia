@@ -13,6 +13,11 @@ namespace PA.Model
         public string salario_cargo { get; set; }
         public string nivel_cargo { get; set; }
 
+        public Cargo()
+        {
+            
+        }
+        
         public Cargo(String desc, String salario, String nivel)
         {
             this.desc_cargo = desc;
