@@ -34,5 +34,10 @@ namespace PA.View
             ClienteDAO clienteDAO = new ClienteDAO();
             clienteDAO.Insert(cliente);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
