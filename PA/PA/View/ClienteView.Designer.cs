@@ -109,49 +109,49 @@
             this.txb_nome_cliente.Location = new System.Drawing.Point(74, 46);
             this.txb_nome_cliente.Name = "txb_nome_cliente";
             this.txb_nome_cliente.Size = new System.Drawing.Size(306, 23);
-            this.txb_nome_cliente.TabIndex = 6;
+            this.txb_nome_cliente.TabIndex = 3;
             // 
             // txb_cpf_cliente
             // 
             this.txb_cpf_cliente.Location = new System.Drawing.Point(74, 81);
             this.txb_cpf_cliente.Name = "txb_cpf_cliente";
             this.txb_cpf_cliente.Size = new System.Drawing.Size(152, 23);
-            this.txb_cpf_cliente.TabIndex = 8;
+            this.txb_cpf_cliente.TabIndex = 4;
             // 
             // txb_end_cliente
             // 
             this.txb_end_cliente.Location = new System.Drawing.Point(74, 226);
             this.txb_end_cliente.Name = "txb_end_cliente";
             this.txb_end_cliente.Size = new System.Drawing.Size(152, 23);
-            this.txb_end_cliente.TabIndex = 10;
+            this.txb_end_cliente.TabIndex = 8;
             // 
             // txb_email_cliente
             // 
             this.txb_email_cliente.Location = new System.Drawing.Point(74, 186);
             this.txb_email_cliente.Name = "txb_email_cliente";
             this.txb_email_cliente.Size = new System.Drawing.Size(152, 23);
-            this.txb_email_cliente.TabIndex = 11;
+            this.txb_email_cliente.TabIndex = 7;
             // 
             // txb_celular_cliente
             // 
             this.txb_celular_cliente.Location = new System.Drawing.Point(74, 151);
             this.txb_celular_cliente.Name = "txb_celular_cliente";
             this.txb_celular_cliente.Size = new System.Drawing.Size(152, 23);
-            this.txb_celular_cliente.TabIndex = 12;
+            this.txb_celular_cliente.TabIndex = 6;
             // 
             // txb_telefone_cliente
             // 
             this.txb_telefone_cliente.Location = new System.Drawing.Point(74, 120);
             this.txb_telefone_cliente.Name = "txb_telefone_cliente";
             this.txb_telefone_cliente.Size = new System.Drawing.Size(152, 23);
-            this.txb_telefone_cliente.TabIndex = 13;
+            this.txb_telefone_cliente.TabIndex = 5;
             // 
             // btn_cadastrarcliente_cadastrar
             // 
             this.btn_cadastrarcliente_cadastrar.Location = new System.Drawing.Point(18, 268);
             this.btn_cadastrarcliente_cadastrar.Name = "btn_cadastrarcliente_cadastrar";
             this.btn_cadastrarcliente_cadastrar.Size = new System.Drawing.Size(96, 30);
-            this.btn_cadastrarcliente_cadastrar.TabIndex = 14;
+            this.btn_cadastrarcliente_cadastrar.TabIndex = 9;
             this.btn_cadastrarcliente_cadastrar.Text = "Incluir";
             this.btn_cadastrarcliente_cadastrar.UseVisualStyleBackColor = true;
             this.btn_cadastrarcliente_cadastrar.Click += new System.EventHandler(this.btn_cadastrarcliente_cadastrar_Click);
@@ -161,7 +161,7 @@
             this.btn_cliente_alterar.Location = new System.Drawing.Point(120, 268);
             this.btn_cliente_alterar.Name = "btn_cliente_alterar";
             this.btn_cliente_alterar.Size = new System.Drawing.Size(96, 30);
-            this.btn_cliente_alterar.TabIndex = 15;
+            this.btn_cliente_alterar.TabIndex = 10;
             this.btn_cliente_alterar.Text = "Alterar";
             this.btn_cliente_alterar.UseVisualStyleBackColor = true;
             this.btn_cliente_alterar.Click += new System.EventHandler(this.button1_Click);
@@ -171,7 +171,7 @@
             this.btn_cliente_excluir.Location = new System.Drawing.Point(222, 268);
             this.btn_cliente_excluir.Name = "btn_cliente_excluir";
             this.btn_cliente_excluir.Size = new System.Drawing.Size(96, 30);
-            this.btn_cliente_excluir.TabIndex = 16;
+            this.btn_cliente_excluir.TabIndex = 11;
             this.btn_cliente_excluir.Text = "Excluir";
             this.btn_cliente_excluir.UseVisualStyleBackColor = true;
             this.btn_cliente_excluir.Click += new System.EventHandler(this.btn_cliente_excluir_Click);
@@ -181,7 +181,7 @@
             this.btn_cliente_fechar.Location = new System.Drawing.Point(435, 272);
             this.btn_cliente_fechar.Name = "btn_cliente_fechar";
             this.btn_cliente_fechar.Size = new System.Drawing.Size(75, 23);
-            this.btn_cliente_fechar.TabIndex = 17;
+            this.btn_cliente_fechar.TabIndex = 12;
             this.btn_cliente_fechar.Text = "Fechar";
             this.btn_cliente_fechar.UseVisualStyleBackColor = true;
             this.btn_cliente_fechar.Click += new System.EventHandler(this.btn_cliente_fechar_Click);
@@ -200,7 +200,7 @@
             this.btn_cliente_pesquisar.Location = new System.Drawing.Point(212, 10);
             this.btn_cliente_pesquisar.Name = "btn_cliente_pesquisar";
             this.btn_cliente_pesquisar.Size = new System.Drawing.Size(81, 23);
-            this.btn_cliente_pesquisar.TabIndex = 20;
+            this.btn_cliente_pesquisar.TabIndex = 2;
             this.btn_cliente_pesquisar.Text = "Pesquisar";
             this.btn_cliente_pesquisar.UseVisualStyleBackColor = true;
             this.btn_cliente_pesquisar.Click += new System.EventHandler(this.btn_cliente_pesquisar_Click);
@@ -210,7 +210,7 @@
             this.nmr_cliente_id.Location = new System.Drawing.Point(74, 12);
             this.nmr_cliente_id.Name = "nmr_cliente_id";
             this.nmr_cliente_id.Size = new System.Drawing.Size(120, 23);
-            this.nmr_cliente_id.TabIndex = 19;
+            this.nmr_cliente_id.TabIndex = 1;
             // 
             // ClienteView
             // 
