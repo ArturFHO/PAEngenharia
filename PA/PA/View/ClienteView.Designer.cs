@@ -1,6 +1,6 @@
 ﻿namespace PA.View
 {
-    partial class CadastrarCliente
+    partial class ClienteView
     {
         /// <summary>
         /// Required designer variable.
@@ -45,9 +45,9 @@
             this.btn_cliente_excluir = new System.Windows.Forms.Button();
             this.btn_cliente_fechar = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.btn_cliente_pesquisar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.nmr_cliente_id = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.nmr_cliente_id)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -174,6 +174,7 @@
             this.btn_cliente_excluir.TabIndex = 16;
             this.btn_cliente_excluir.Text = "Excluir";
             this.btn_cliente_excluir.UseVisualStyleBackColor = true;
+            this.btn_cliente_excluir.Click += new System.EventHandler(this.btn_cliente_excluir_Click);
             // 
             // btn_cliente_fechar
             // 
@@ -183,6 +184,7 @@
             this.btn_cliente_fechar.TabIndex = 17;
             this.btn_cliente_fechar.Text = "Fechar";
             this.btn_cliente_fechar.UseVisualStyleBackColor = true;
+            this.btn_cliente_fechar.Click += new System.EventHandler(this.btn_cliente_fechar_Click);
             // 
             // label7
             // 
@@ -193,13 +195,6 @@
             this.label7.TabIndex = 18;
             this.label7.Text = "ID:";
             // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(74, 12);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 23);
-            this.numericUpDown1.TabIndex = 19;
-            // 
             // btn_cliente_pesquisar
             // 
             this.btn_cliente_pesquisar.Location = new System.Drawing.Point(212, 10);
@@ -208,14 +203,22 @@
             this.btn_cliente_pesquisar.TabIndex = 20;
             this.btn_cliente_pesquisar.Text = "Pesquisar";
             this.btn_cliente_pesquisar.UseVisualStyleBackColor = true;
+            this.btn_cliente_pesquisar.Click += new System.EventHandler(this.btn_cliente_pesquisar_Click);
             // 
-            // CadastrarCliente
+            // nmr_cliente_id
+            // 
+            this.nmr_cliente_id.Location = new System.Drawing.Point(74, 12);
+            this.nmr_cliente_id.Name = "nmr_cliente_id";
+            this.nmr_cliente_id.Size = new System.Drawing.Size(120, 23);
+            this.nmr_cliente_id.TabIndex = 19;
+            // 
+            // ClienteView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(537, 312);
             this.Controls.Add(this.btn_cliente_pesquisar);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.nmr_cliente_id);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btn_cliente_fechar);
             this.Controls.Add(this.btn_cliente_excluir);
@@ -233,9 +236,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "CadastrarCliente";
+            this.Name = "ClienteView";
             this.Text = "CadastrarCliente";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nmr_cliente_id)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -260,7 +263,7 @@
         private Button btn_cliente_excluir;
         private Button btn_cliente_fechar;
         private Label label7;
-        private NumericUpDown numericUpDown1;
         private Button btn_cliente_pesquisar;
+        private NumericUpDown nmr_cliente_id;
     }
 }

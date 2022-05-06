@@ -41,7 +41,7 @@
             this.btn_login_entrar.Location = new System.Drawing.Point(328, 18);
             this.btn_login_entrar.Name = "btn_login_entrar";
             this.btn_login_entrar.Size = new System.Drawing.Size(75, 23);
-            this.btn_login_entrar.TabIndex = 0;
+            this.btn_login_entrar.TabIndex = 3;
             this.btn_login_entrar.Text = "Entrar";
             this.btn_login_entrar.UseVisualStyleBackColor = true;
             this.btn_login_entrar.Click += new System.EventHandler(this.btn_login_entrar_Click);
@@ -51,7 +51,7 @@
             this.btn_login_cancelar.Location = new System.Drawing.Point(328, 59);
             this.btn_login_cancelar.Name = "btn_login_cancelar";
             this.btn_login_cancelar.Size = new System.Drawing.Size(75, 23);
-            this.btn_login_cancelar.TabIndex = 1;
+            this.btn_login_cancelar.TabIndex = 4;
             this.btn_login_cancelar.Text = "Cancelar";
             this.btn_login_cancelar.UseVisualStyleBackColor = true;
             this.btn_login_cancelar.Click += new System.EventHandler(this.btn_login_cancelar_Click);
@@ -79,7 +79,7 @@
             this.txb_login_user.Location = new System.Drawing.Point(84, 18);
             this.txb_login_user.Name = "txb_login_user";
             this.txb_login_user.Size = new System.Drawing.Size(226, 23);
-            this.txb_login_user.TabIndex = 4;
+            this.txb_login_user.TabIndex = 1;
             // 
             // txb_login_senha
             // 
@@ -87,7 +87,7 @@
             this.txb_login_senha.Name = "txb_login_senha";
             this.txb_login_senha.PasswordChar = '*';
             this.txb_login_senha.Size = new System.Drawing.Size(226, 23);
-            this.txb_login_senha.TabIndex = 5;
+            this.txb_login_senha.TabIndex = 2;
             // 
             // Login
             // 

@@ -11,9 +11,9 @@ namespace PA.DAO
 {
     public class UsuarioDAO
     {
-        public void Insert(Usuario usuario)
+        /* public void Insert(Usuario usuario)
         {
-            /*NpgsqlCommand comando = new NpgsqlCommand();
+            NpgsqlCommand comando = new NpgsqlCommand();
             comando.CommandType = System.Data.CommandType.Text;
             comando.CommandText = "INSERT INTO Cliente (nome_cliente, cpf_cliente, tel_cliente, cel_cliente, email_cliente, end_cliente) VALUES (@nome, @cpf, @telefone, @celular, @email, @endereco)";
 
@@ -24,31 +24,31 @@ namespace PA.DAO
             comando.Parameters.AddWithValue("@email", cliente.email_cliente);
             comando.Parameters.AddWithValue("@endereco", cliente.end_cliente);
 
-            ConexaoBanco.CRUD(comando);*/
-        }
+            ConexaoBanco.CRUD(comando);
+        }*/
 
-        public void Update(Cliente cliente)
+        /*public void Update(Usuario usuario)
         {
             NpgsqlCommand comando = new NpgsqlCommand();
             comando.CommandType = System.Data.CommandType.Text;
-            /* comando.CommandText = 'INSERT INTO Cliente (nome_cliente, cpf_cliente, tel_cliente, cel_cliente, email_cliente, end_cliente) VALUES (@nome, @cpf, @telefone, @celular, @email, @endereco)';
+            /comando.CommandText = 'INSERT INTO Cliente (nome_cliente, cpf_cliente, tel_cliente, cel_cliente, email_cliente, end_cliente) VALUES (@nome, @cpf, @telefone, @celular, @email, @endereco)';
 
-            comando.Parameters.AddWithValue("@nome", cliente);
+            comando.Parameters.AddWithValue("@nome", usuario.nome_usuario);
             comando.Parameters.AddWithValue("@cpf", cliente.cpf);
             comando.Parameters.AddWithValue("@telefone", cliente.telefone);
             comando.Parameters.AddWithValue("@celular", cliente.celular);
             comando.Parameters.AddWithValue("@email", cliente.email);
             comando.Parameters.AddWithValue("@endereco", cliente.endereco);
 
-            ConexaoBanco.CRUD(comando);*/
+            ConexaoBanco.CRUD(comando);
 
-        }
+        }*/
 
-        public void Delete(Cliente cliente)
+        /* public void Delete(Cliente cliente)
         {
             NpgsqlCommand comando = new NpgsqlCommand();
             comando.CommandType = System.Data.CommandType.Text;
-            /* comando.CommandText = 'INSERT INTO Cliente (nome_cliente, cpf_cliente, tel_cliente, cel_cliente, email_cliente, end_cliente) VALUES (@nome, @cpf, @telefone, @celular, @email, @endereço)';
+            comando.CommandText = 'INSERT INTO Cliente (nome_cliente, cpf_cliente, tel_cliente, cel_cliente, email_cliente, end_cliente) VALUES (@nome, @cpf, @telefone, @celular, @email, @endereço)';
 
             comando.Parameters.AddWithValue("@nome", cliente);
             comando.Parameters.AddWithValue("@nome", cliente);
@@ -58,10 +58,10 @@ namespace PA.DAO
             comando.Parameters.AddWithValue("@nome", cliente);
             comando.Parameters.AddWithValue("@nome", cliente);
 
-            ConexaoBanco.CRUD(comando); */
-        }
+            ConexaoBanco.CRUD(comando); 
+        }*/
 
-        public void BuscarPorId(int id)
+        /* public void BuscarPorId(int id)
         {
             NpgsqlCommand comando = new NpgsqlCommand();
             comando.CommandType = System.Data.CommandType.Text;
@@ -69,7 +69,7 @@ namespace PA.DAO
             comando.Parameters.AddWithValue("@id");
 
             ConexaoBanco.CRUD(comando);
-        }
+        }*/
 
         public Usuario ValidarUsuario(String user, String senha)
         {

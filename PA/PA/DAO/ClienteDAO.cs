@@ -33,9 +33,9 @@ namespace PA.DAO
         {
             NpgsqlCommand comando = new NpgsqlCommand();
             comando.CommandType = System.Data.CommandType.Text;
-            comando.CommandText = "UPDATE Cliente SET nome_cliente=@nome, cpf_cliente=@sal, tel_cliente=@telefone, cel_cliente=@celular, email_cliente=@email, end_cliente=@endereco,  fk_id_usuario=@id_usuario) " + 
-                                               "WHERE id_Cargo=@id";
-
+            comando.CommandText = "UPDATE Cliente SET nome_cliente=@nome, cpf_cliente=@cpf, tel_cliente=@telefone, cel_cliente=@celular, email_cliente=@email, end_cliente=@endereco, fk_id_usuario=@id_usuario WHERE id_cliente=@id";
+  
+            comando.Parameters.AddWithValue("@id", cliente.id_cliente);
             comando.Parameters.AddWithValue("@nome", cliente.nome_cliente);
             comando.Parameters.AddWithValue("@cpf", cliente.cpf_cliente);
             comando.Parameters.AddWithValue("@telefone", cliente.tel_cliente);
@@ -44,11 +44,12 @@ namespace PA.DAO
             comando.Parameters.AddWithValue("@endereco", cliente.end_cliente);
             comando.Parameters.AddWithValue("@id_usuario", Global.usuario.id_usuario);
 
+
             ConexaoBanco.CRUD(comando);
         }
 
-        public void Delete(Cliente cliente)
-        {
+       public void Delete(Cliente cliente)
+       {
             NpgsqlCommand comando = new NpgsqlCommand();
             comando.CommandType = System.Data.CommandType.Text;
             comando.CommandText = "DELETE FROM Cliente WHERE id_cliente=@id";
@@ -56,7 +57,7 @@ namespace PA.DAO
             comando.Parameters.AddWithValue("@id", cliente.id_cliente);
         
             ConexaoBanco.CRUD(comando);
-        }
+       }
 
         public Cliente BuscarPorId(int id)
         {

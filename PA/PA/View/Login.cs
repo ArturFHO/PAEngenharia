@@ -35,7 +35,7 @@ namespace PA.View
 
             if (Global.usuario != null)
             {
-                CadastrarCliente cadastrar = new CadastrarCliente();
+                ClienteView cadastrar = new ClienteView();
                 cadastrar.Show();
             }
             else

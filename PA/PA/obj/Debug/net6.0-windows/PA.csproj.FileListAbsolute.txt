@@ -47,7 +47,6 @@ D:\Faculdade\Repos\PAEngenharia\PA\PA\bin\Debug\net6.0-windows\PA.dll
 D:\Faculdade\Repos\PAEngenharia\PA\PA\bin\Debug\net6.0-windows\PA.pdb
 D:\Faculdade\Repos\PAEngenharia\PA\PA\bin\Debug\net6.0-windows\Npgsql.dll
 D:\Faculdade\Repos\PAEngenharia\PA\PA\obj\Debug\net6.0-windows\PA.csproj.AssemblyReference.cache
-D:\Faculdade\Repos\PAEngenharia\PA\PA\obj\Debug\net6.0-windows\PA.View.CadastrarCliente.resources
 D:\Faculdade\Repos\PAEngenharia\PA\PA\obj\Debug\net6.0-windows\PA.View.Login.resources
 D:\Faculdade\Repos\PAEngenharia\PA\PA\obj\Debug\net6.0-windows\PA.View.Menu.resources
 D:\Faculdade\Repos\PAEngenharia\PA\PA\obj\Debug\net6.0-windows\PA.csproj.GenerateResource.cache
@@ -61,3 +60,7 @@ D:\Faculdade\Repos\PAEngenharia\PA\PA\obj\Debug\net6.0-windows\refint\PA.dll
 D:\Faculdade\Repos\PAEngenharia\PA\PA\obj\Debug\net6.0-windows\PA.pdb
 D:\Faculdade\Repos\PAEngenharia\PA\PA\obj\Debug\net6.0-windows\PA.genruntimeconfig.cache
 D:\Faculdade\Repos\PAEngenharia\PA\PA\obj\Debug\net6.0-windows\ref\PA.dll
+D:\Faculdade\repos\PAEngenharia\PA\PA\obj\Debug\net6.0-windows\PA.View.CargoView.resources
+D:\Faculdade\repos\PAEngenharia\PA\PA\obj\Debug\net6.0-windows\PA.View.ClienteView.resources
+D:\Faculdade\repos\PAEngenharia\PA\PA\obj\Debug\net6.0-windows\PA.View.PetView.resources
+D:\Faculdade\repos\PAEngenharia\PA\PA\obj\Debug\net6.0-windows\PA.View.UsuarioView.resources

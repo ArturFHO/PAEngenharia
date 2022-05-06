@@ -11,7 +11,7 @@ namespace PA.DAO
     {
         public static NpgsqlConnection Conectar()
         {
-            string stringConexao = "Server=172.22.4.174;" +
+            string stringConexao = "Server=localhost;" +
                                    "Port=5432;" +
                                    "User Id=postgres;" +
                                    "Password=031298;" +

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Faculdade\\Repos\\PAEngenharia\\PA\\PA\\PA.csproj": {}
+    "D:\\Faculdade\\repos\\PAEngenharia\\PA\\PA\\PA.csproj": {}
   },
   "projects": {
-    "D:\\Faculdade\\Repos\\PAEngenharia\\PA\\PA\\PA.csproj": {
+    "D:\\Faculdade\\repos\\PAEngenharia\\PA\\PA\\PA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Faculdade\\Repos\\PAEngenharia\\PA\\PA\\PA.csproj",
+        "projectUniqueName": "D:\\Faculdade\\repos\\PAEngenharia\\PA\\PA\\PA.csproj",
         "projectName": "PA",
-        "projectPath": "D:\\Faculdade\\Repos\\PAEngenharia\\PA\\PA\\PA.csproj",
+        "projectPath": "D:\\Faculdade\\repos\\PAEngenharia\\PA\\PA\\PA.csproj",
         "packagesPath": "C:\\Users\\Artur\\.nuget\\packages\\",
-        "outputPath": "D:\\Faculdade\\Repos\\PAEngenharia\\PA\\PA\\obj\\",
+        "outputPath": "D:\\Faculdade\\repos\\PAEngenharia\\PA\\PA\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Artur\\AppData\\Roaming\\NuGet\\NuGet.Config",
