@@ -17,6 +17,9 @@ namespace PA.View
         public ClienteView()
         {
             InitializeComponent();
+            
+            ClienteDAO clienteDAO = new ClienteDAO();
+            dataGridView1.DataSource = clienteDAO.SelecionarTabelaToda();
         }
 
         private void btn_cadastrarcliente_cadastrar_Click(object sender, EventArgs e)
@@ -129,6 +132,14 @@ namespace PA.View
         private void btn_cliente_fechar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+            
+
+
         }
     }
 }

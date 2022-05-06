@@ -47,7 +47,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.btn_cliente_pesquisar = new System.Windows.Forms.Button();
             this.nmr_cliente_id = new System.Windows.Forms.NumericUpDown();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.nmr_cliente_id)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -148,7 +150,7 @@
             // 
             // btn_cadastrarcliente_cadastrar
             // 
-            this.btn_cadastrarcliente_cadastrar.Location = new System.Drawing.Point(18, 268);
+            this.btn_cadastrarcliente_cadastrar.Location = new System.Drawing.Point(12, 505);
             this.btn_cadastrarcliente_cadastrar.Name = "btn_cadastrarcliente_cadastrar";
             this.btn_cadastrarcliente_cadastrar.Size = new System.Drawing.Size(96, 30);
             this.btn_cadastrarcliente_cadastrar.TabIndex = 9;
@@ -158,7 +160,7 @@
             // 
             // btn_cliente_alterar
             // 
-            this.btn_cliente_alterar.Location = new System.Drawing.Point(120, 268);
+            this.btn_cliente_alterar.Location = new System.Drawing.Point(144, 505);
             this.btn_cliente_alterar.Name = "btn_cliente_alterar";
             this.btn_cliente_alterar.Size = new System.Drawing.Size(96, 30);
             this.btn_cliente_alterar.TabIndex = 10;
@@ -168,7 +170,7 @@
             // 
             // btn_cliente_excluir
             // 
-            this.btn_cliente_excluir.Location = new System.Drawing.Point(222, 268);
+            this.btn_cliente_excluir.Location = new System.Drawing.Point(273, 505);
             this.btn_cliente_excluir.Name = "btn_cliente_excluir";
             this.btn_cliente_excluir.Size = new System.Drawing.Size(96, 30);
             this.btn_cliente_excluir.TabIndex = 11;
@@ -178,7 +180,7 @@
             // 
             // btn_cliente_fechar
             // 
-            this.btn_cliente_fechar.Location = new System.Drawing.Point(435, 272);
+            this.btn_cliente_fechar.Location = new System.Drawing.Point(578, 509);
             this.btn_cliente_fechar.Name = "btn_cliente_fechar";
             this.btn_cliente_fechar.Size = new System.Drawing.Size(75, 23);
             this.btn_cliente_fechar.TabIndex = 12;
@@ -211,12 +213,28 @@
             this.nmr_cliente_id.Name = "nmr_cliente_id";
             this.nmr_cliente_id.Size = new System.Drawing.Size(120, 23);
             this.nmr_cliente_id.TabIndex = 1;
+            this.nmr_cliente_id.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(14, 277);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(674, 191);
+            this.dataGridView1.TabIndex = 19;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // ClienteView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(537, 312);
+            this.ClientSize = new System.Drawing.Size(741, 561);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btn_cliente_pesquisar);
             this.Controls.Add(this.nmr_cliente_id);
             this.Controls.Add(this.label7);
@@ -239,6 +257,7 @@
             this.Name = "ClienteView";
             this.Text = "CadastrarCliente";
             ((System.ComponentModel.ISupportInitialize)(this.nmr_cliente_id)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -265,5 +284,6 @@
         private Label label7;
         private Button btn_cliente_pesquisar;
         private NumericUpDown nmr_cliente_id;
+        private DataGridView dataGridView1;
     }
 }

@@ -68,7 +68,6 @@ namespace PA.DAO
             comando.Parameters.AddWithValue("@id", id);
 
             NpgsqlDataReader dr = ConexaoBanco.Selecionar(comando);
-
             Cliente cliente = new Cliente();
             if (dr.HasRows)
             {
@@ -87,6 +86,25 @@ namespace PA.DAO
                 cliente = null;
             }
             return cliente;
-        }    
+        }
+
+        public System.Data.DataTable SelecionarTabelaToda()
+        {
+            NpgsqlCommand comando = new NpgsqlCommand();
+            comando.CommandType = System.Data.CommandType.Text;
+            comando.CommandText = "SELECT * FROM Cliente";
+
+            NpgsqlDataReader dr = ConexaoBanco.Selecionar(comando);
+
+            Cliente cliente = new Cliente();
+            System.Data.DataTable dt = new System.Data.DataTable();
+            if (dr.HasRows)
+            {
+                
+                dt.Load(dr);
+                
+            }
+            return dt;
+        }
     }
 }
